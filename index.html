@@ -6,20 +6,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Conversor de Moedas</title>
 
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="container">
+        <div class="header">
             <h1 class="page-title">Conversor de moedas</h1>
-            <p class="page-subtitle">Insira um valor em dólares pra conhecer o valor em reais</p>
-
-            <h2>   </h2>
-            
-            <h3>   </h3>
+            <p class="page-subtitle">Escolha uma moeda para conhecer seu valor em reais</p>
         </div>
-        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+        <div class="moeda-input">
+            <form class="moeda-estrangeira">
+                <div class="wrap-input">
+                    <label class="label-input" for="dolar">Informe o valor em dólares</label>
+                    <input type="number" class="input-input" id="input-dolar" name="dolar" placeholder="USD $" inputmode="decimal">
+                </div>
+                <div class="wrap-input">
+                    <label class="label-input" for="euro">Informe o valor em euros</label>
+                    <input type="number" name="euro" class="input-input" id="input-euro" placeholder="EUR €" inputmode="decimal">
+                </div>
+                <div class="wrap-input">
+                    <label class="label-input" for="pesos">Informe o valor em pesos argentinos</label>
+                    <input type="number" class="input-input" id="input-pesos" name="pesos" placeholder="ARS $" inputmode="decimal">
+                </div>
+            </form>
+        </div>
+        <div class="floatter-button">
+            <input type="button" class="button-exchange" id="button-converter" value="Converter"></button>
+        </div>
+        <div class="moeda-output">
+            <p class="result">R$ 200,00</h2>
+            <p class="error">Um dos valores foi inserido incorretamente<br>Tente novamente</h3>
+        </div>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="Logo da imersaodev em texto estilizado">
         <a href="https://alura.com.br/" target="_blank">
-            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="Logo da Alura: somente o nome da alura em texto estilizado" class="alura-logo">
         </a>
 
     <script src="script.js"></script>
