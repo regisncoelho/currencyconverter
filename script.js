@@ -8,61 +8,19 @@ var CambioPesoReal = 0.060
 
 var moeda = prompt("Escolha uma das moedas abaixo:" + "\n" + "• Dolar" + "\n" + "• Euro" + "\n" + "• Peso Argentino")
 
-if (moeda == "Dolar"){
+if (moeda == "Dolar" || moeda == "dolar" || moeda == "dólar"){
 var valorDolarInput = parseFloat(prompt("Informe o valor em dólares"))
 var valorEmReal = valorDolarInput * CambioDolarReal
 document.write("<h2>" + "U$" + valorDolarInput.toFixed(2) + " = " + "R$" + valorEmReal.toFixed(2) + "</h2>")
-}    
+}
 
-else if (moeda == "dolar"){
-var valorDolarInput = parseFloat(prompt("Informe o valor em dólares"))
-var valorEmReal = valorDolarInput * CambioDolarReal
-document.write("<h2>" + "U$" + valorDolarInput.toFixed(2) + " = " + "R$" + valorEmReal.toFixed(2) + "</h2>")
-}   
-
-else if (moeda == "dólar"){
-var valorDolarInput = parseFloat(prompt("Informe o valor em dólares"))
-var valorEmReal = valorDolarInput * CambioDolarReal
-document.write("<h2>" + "U$" + valorDolarInput.toFixed(2) + " = " + "R$" + valorEmReal.toFixed(2) + "</h2>")
-} 
-
-else if (moeda == "Euro"){
+else if (moeda == "Euro" || moeda == "euro"){
 var valorEuroInput = parseFloat(prompt("Informe o valor em euros"))
 var valorEmReal = valorEuroInput * CambioEuroReal
 document.write("<h2>" + "₤" + valorEuroInput.toFixed(2) + " = " + "R$" + valorEmReal.toFixed(2) + "</h2>")
-} 
-               
-else if (moeda == "euro"){
-var valorEuroInput = parseFloat(prompt("Informe o valor em euros"))
-var valorEmReal = valorEuroInput * CambioEuroReal
-document.write("<h2>" + "₤" + valorEuroInput.toFixed(2) + " = " + "R$" + valorEmReal.toFixed(2) + "</h2>")
-}               
+}            
 
-else if (moeda == "Peso Argentino"){
-var valorPesoInput = parseFloat(prompt("Informe o valor em euros"))
-var valorEmReal = valorPesoInput * CambioPesoReal
-document.write("<h2>" + "$" + valorPesoInput.toFixed(2) + " = " + "R$" + valorEmReal.toFixed(2) + "</h2>")
-}
-
-else if (moeda == "peso argentino"){
-var valorPesoInput = parseFloat(prompt("Informe o valor em euros"))
-var valorEmReal = valorPesoInput * CambioPesoReal
-document.write("<h2>" + "$" + valorPesoInput.toFixed(2) + " = " + "R$" + valorEmReal.toFixed(2) + "</h2>")
-}
-
-else if (moeda == "Peso argentino"){
-var valorPesoInput = parseFloat(prompt("Informe o valor em euros"))
-var valorEmReal = valorPesoInput * CambioPesoReal
-document.write("<h2>" + "$" + valorPesoInput.toFixed(2) + " = " + "R$" + valorEmReal.toFixed(2) + "</h2>")
-}
-
-else if (moeda == "Peso"){
-var valorPesoInput = parseFloat(prompt("Informe o valor em pesos argentinos"))
-var valorEmReal = valorPesoInput * CambioPesoReal
-document.write("<h2>" + "$" + valorPesoInput.toFixed(2) + " = " + "R$" + valorEmReal.toFixed(2) + "</h2>")
-}
-
-else if (moeda == "peso"){
+else if (moeda == "Peso Argentino" || moeda == "peso argentino" || moeda == "Peso argentino" || moeda == "Peso" || moeda == "peso"){
 var valorPesoInput = parseFloat(prompt("Informe o valor em pesos argentinos"))
 var valorEmReal = valorPesoInput * CambioPesoReal
 document.write("<h2>" + "$" + valorPesoInput.toFixed(2) + " = " + "R$" + valorEmReal.toFixed(2) + "</h2>")
